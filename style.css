@@ -66,6 +66,12 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.user-does-not-exist {
+  color: rgb(212, 0, 0);
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
 .userprofile {
   position: absolute;
   top: 0;
