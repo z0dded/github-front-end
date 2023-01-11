@@ -13,15 +13,12 @@ submitUsername.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const url = `https://api.github.com/users/${userName.value}`;
-  console.log(url);
-
   searchGithubData(url);
 });
 
 const searchGithubData = async (url) => {
   const response = await fetch(url);
   const data = await response.json();
-  console.log(response.ok);
 
   if (response.ok) {
     createUserProfile(data);
