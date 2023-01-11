@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Frontend</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3383caf31d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="submituser">
+      <h1 class="submituser__title">Type your github username:</h1>
+      <input type="text" required autofocus class="submituser__username" />
+      <button type="submit" class="submituser__button">Submit</button>
+    </form>
+    <div class="userprofile">
+      <div class="userprofile__card">
+        <div class="userprofile__icon"></div>
+        <h1 class="userprofile__login"></h1>
+        <p class="userprofile__location">
+          <i class="fa-solid fa-location-dot"></i>
+        </p>
+        <div class="userprofile__line"></div>
+        <p class="userprofile__bio"></p>
+        <div class="userprofile__numbers">
+          <div class="userprofile__followers">
+            <h3 class="userprofile__followers-count">0</h3>
+            <p>followers</p>
+          </div>
+          <div class="userprofile__repos">
+            <h3 class="userprofile__repos-count"></h3>
+            <p>repositories</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

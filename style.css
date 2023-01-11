@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(45deg, #000, #252d43, #541e58);
+}
+
+.submituser {
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hide-submituser {
+  z-index: -10;
+  visibility: hidden;
+}
+
+.submituser__title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.submituser__username {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 0.575rem 1rem;
+  font-size: 2rem;
+  width: 40vw;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+}
+
+.submituser__username:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1.5px solid white;
+}
+
+.submituser__button {
+  color: white;
+  font-size: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 2rem;
+}
+
+.submituser__button:hover {
+  cursor: pointer;
+  border: 1.5px solid white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.userprofile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-userprofile {
+  z-index: 10;
+  visibility: visible;
+}
+
+.userprofile__card {
+  width: 25rem;
+  color: white;
+  padding: 1rem 1rem;
+  text-align: center;
+  background-color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.userprofile__icon {
+  margin: 0 auto;
+  height: 175px;
+  width: 175px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+.userprofile__login {
+  font-size: 2.5rem;
+}
+
+.userprofile__location {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.userprofile__line {
+  border-radius: 8px;
+  width: 90%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 1.5rem auto 1.5rem;
+}
+
+.userprofile__bio {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.bio-not-written {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1.5rem;
+}
+
+.userprofile__numbers {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.userprofile__numbers h3 {
+  font-size: 2.5rem;
+}
+
+.userprofile__numbers p {
+  font-size: 0.8rem;
+}
